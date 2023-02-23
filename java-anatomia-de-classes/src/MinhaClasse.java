@@ -1,12 +1,32 @@
+/**
+ * This is a silly class to wrap-up codes conventions examples
+ */
+
 public class MinhaClasse {
     public static void main(String[] args) {
-        System.out.print("Hello World!");
-
-        /* Regras de nomenclatura:
-         * 1: camel case
-         * 2: Se for uma constante, nomes compostos são separados por "_"
-         * 3: Variáveis podem conter apenas os caracteres "_, $, letras e números de 0 a 0"
-         * 4: Variáveis podem começar somente com "_, $ ou letras" (nunca com números)
+        /* 
+         * Naming conventions:
+         * 1: variables, methods and classes follow CammelCase write convention.
+         * 2: constants must be upper case words and if it's a compound noun 
+         *    it's words must be separeted by "_".
+         * 3: variables must contain just "_, $, letters and numbers 0 to 9".
+         * 4: variables must start only with "_, $ and letters" (never with 
+         *    numbers).
+         * 5: methods must be inifnitive verbs.
+         * 6: variables must be nouns.
+         * 
+         * More conventions: 
+         * https://www.oracle.com/technetwork/java/codeconventions-150003.pdf
          */
+
+        String firstName = "Roberson";
+        String lastName = "Mendes";
+        String name =  allName(firstName, lastName);
+
+        System.out.print(name);
+    }
+
+    public static String allName(String first, String second) {
+        return first.concat(" ").concat(second);
     }
 }
