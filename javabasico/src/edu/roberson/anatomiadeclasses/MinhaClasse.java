@@ -1,3 +1,4 @@
+package edu.roberson.anatomiadeclasses;
 /**
  * This is a silly class to wrap-up codes conventions examples
  */
